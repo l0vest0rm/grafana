@@ -5,6 +5,7 @@ basepath=$(cd `dirname $0`; pwd)
 cd $basepath
 
 go run build.go build-server
+date
 go run build.go build-frontend
 if [ $? -eq 0 ]; then
     rm -f public.tgz
@@ -17,3 +18,4 @@ if [ $? -eq 0 ]; then
 else
     echo "failed"
 fi
+date
