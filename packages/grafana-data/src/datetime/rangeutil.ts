@@ -49,7 +49,7 @@ const rangeOptions = [
   { from: 'now-15m', to: 'now', display: '最近15分钟', section: 3 },
   { from: 'now-30m', to: 'now', display: '最近30分钟', section: 3 },
   { from: 'now-1h', to: 'now', display: '最近1小时', section: 3 },
-  { from: 'now-3h', to: 'now', display: '最近3小时, section: 3 },
+  { from: 'now-3h', to: 'now', display: '最近3小时', section: 3 },
   { from: 'now-6h', to: 'now', display: '最近6小时', section: 3 },
   { from: 'now-12h', to: 'now', display: '最近12小时', section: 3 },
   { from: 'now-24h', to: 'now', display: '最近24小时', section: 3 },
