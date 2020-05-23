@@ -6,3 +6,5 @@ cd $basepath
 
 go run build.go build-server
 go run build.go build-frontend
+rm -f public.tgz
+tar czf public.tgz public
