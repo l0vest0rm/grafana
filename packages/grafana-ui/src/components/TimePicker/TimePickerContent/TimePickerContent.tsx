@@ -257,9 +257,7 @@ const EmptyRecentList = memo(() => {
   return (
     <div className={styles.container}>
       <div>
-        <span>
-          看样子你之前没有使用过时间选择组件. 一旦你选择过某个时间范围, 
-          最近用过的范围就会显示在这.
+        <span>看样子你之前没有使用过时间选择组件. 一旦你选择过某个时间范围, 最近用过的范围就会显示在这.
         </span>
       </div>
       <div>
