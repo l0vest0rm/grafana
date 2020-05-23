@@ -83,6 +83,9 @@ export function getPanelMenu(
   };
 
   const menu: PanelMenuItem[] = [];
+  if (!dashboard.canEditPanel(panel)) {
+    return menu;
+  }
 
   if (!panel.isEditing) {
     menu.push({
