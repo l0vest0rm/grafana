@@ -131,7 +131,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
       <form className="section gf-form-group" onSubmit={this.onSubmitForm}>
         <h3 className="page-heading">Preferences</h3>
         <div className="gf-form">
-          <span className="gf-form-label width-11">UI Theme</span>
+          <span className="gf-form-label width-11">界面主题</span>
           <Select
             isSearchable={false}
             value={themes.find(item => item.value === theme)}
@@ -158,7 +158,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
           />
         </div>
         <div className="gf-form" aria-label={selectors.components.TimeZonePicker.container}>
-          <label className="gf-form-label width-11">Timezone</label>
+          <label className="gf-form-label width-11">时区</label>
           <Select
             isSearchable={true}
             value={timeZones.find(item => item.value === timezone)}
