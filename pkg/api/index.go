@@ -134,11 +134,11 @@ func (hs *HTTPServer) setIndexViewData(c *models.ReqContext) (*dtos.IndexViewDat
 	}
 
 	if c.OrgRole == models.ROLE_ADMIN || c.OrgRole == models.ROLE_EDITOR {
-		dashboardChildNavs = append(dashboardChildNavs, ...[]*dtos.NavLink{
+		dashboardChildNavs = append(dashboardChildNavs, []*dtos.NavLink{
 			{Text: "Manage", Id: "manage-dashboards", Url: setting.AppSubUrl + "/dashboards", Icon: "sitemap"},
 			{Text: "Playlists", Id: "playlists", Url: setting.AppSubUrl + "/playlists", Icon: "presentation-play"},
 			{Text: "Snapshots", Id: "snapshots", Url: setting.AppSubUrl + "/dashboard/snapshots", Icon: "camera"},
-		})
+		}...)
 	}
 
 	data.NavTree = append(data.NavTree, &dtos.NavLink{
