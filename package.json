@@ -284,8 +284,7 @@
     "whatwg-fetch": "3.0.0"
   },
   "resolutions": {
-    "caniuse-db": "1.0.30000772",
-    "@babel/preset-env": "7.8.4"
+    "caniuse-db": "1.0.30000772"
   },
   "workspaces": {
     "packages": [
